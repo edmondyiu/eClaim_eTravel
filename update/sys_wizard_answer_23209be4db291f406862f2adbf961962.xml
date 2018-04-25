@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Travel Request</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Travel Request</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">59b049720f332200e9ec5c3be1050e85</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-15 16:25:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>23209be4db291f406862f2adbf961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Request</sys_name>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_wizard_answer_23209be4db291f406862f2adbf961962</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-15 16:25:42</sys_updated_on>
+        <table/>
+        <target_url>x_dchhl_dch_eclaim_travel_request.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

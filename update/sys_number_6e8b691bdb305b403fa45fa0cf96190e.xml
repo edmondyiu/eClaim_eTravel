@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_dchhl_dch_eclaim_meal_and_other_expenses_claim">x_dchhl_dch_eclaim_meal_and_other_expenses_claim</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>MOEC</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-17 15:22:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6e8b691bdb305b403fa45fa0cf96190e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>MOEC</sys_name>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_number_6e8b691bdb305b403fa45fa0cf96190e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-21 03:27:38</sys_updated_on>
+    </sys_number>
+</record_update>

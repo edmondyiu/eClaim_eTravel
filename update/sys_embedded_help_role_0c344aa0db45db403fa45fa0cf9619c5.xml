@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_dchhl_dch_eclaim.travel_location_user" name="x_dchhl_dch_eclaim.travel_location_user">cc344aa0db45db403fa45fa0cf9619c3</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-21 14:22:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0c344aa0db45db403fa45fa0cf9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cc344aa0db45db403fa45fa0cf9619c3</sys_name>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_embedded_help_role_0c344aa0db45db403fa45fa0cf9619c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-21 14:22:17</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="cmn_location" label="Travel Location" max_length="40" name="x_dchhl_dch_eclaim_travel_location" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" dependent="travel_country" dependent_on_field="travel_country" label="Trip City" max_length="40" name="travel_city" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Thailand" label="Bangkok" value="Bangkok"/>
+                <element dependent_value="Malaysia" label="Kuala Lumpur" value="Kuala Lumpur"/>
+                <element dependent_value="Singapore" label="Singapore" value="Singapore"/>
+            </choice>
+        </element>
+        <element choice="1" label="Trip Country" max_length="40" name="travel_country" type="choice">
+            <choice>
+                <element label="Malaysia" value="Malaysia"/>
+                <element label="Singapore" value="Singapore"/>
+                <element label="Thailand" value="Thailand"/>
+            </choice>
+        </element>
+    </element>
+</database>

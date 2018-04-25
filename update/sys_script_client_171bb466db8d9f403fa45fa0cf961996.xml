@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>amount</field>
+        <global>true</global>
+        <messages/>
+        <name>Chg Font</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   
+	/*var sections = g_form.getSections();
+    sections[1].style.backgroundColor = 'yellow';
+    sections[2].style.backgroundColor = 'red';		*/
+   g_form.setDisplay('att',false);
+   g_form.setDisplay('no_of_days',false);	
+   //return false;	
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-27 14:11:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>171bb466db8d9f403fa45fa0cf961996</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Chg Font</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_script_client_171bb466db8d9f403fa45fa0cf961996</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-28 08:41:58</sys_updated_on>
+        <table>x_dchhl_dch_eclaim_hotel_and_other_expenses_claim</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

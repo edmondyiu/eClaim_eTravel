@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Approver Chain" max_length="40" name="x_dchhl_dch_eclaim_approver_chain" type="collection">
+        <element label="Approver Level 1" max_length="40" name="approver_level_1" reference="sys_user" type="reference"/>
+        <element label="Approver Level 2" max_length="40" name="approver_level_2" reference="sys_user" type="reference"/>
+        <element label="Approver Level 3" max_length="40" name="approver_level_3" reference="sys_user" type="reference"/>
+        <element label="Approver Level 4" max_length="40" name="approver_level_4" reference="sys_user" type="reference"/>
+        <element label="Approver Level 5" max_length="40" name="approver_level_5" reference="sys_user" type="reference"/>
+        <element label="Category" max_length="40" name="category" type="string"/>
+        <element label="Company" max_length="40" name="company" type="string"/>
+        <element label="Criteria" max_length="40" name="criteria" type="string"/>
+        <element label="Department" max_length="40" name="department" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

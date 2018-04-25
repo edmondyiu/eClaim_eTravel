@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>claim_date</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-28 07:01:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bf4224fadb45df403fa45fa0cf9619d6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>claim_date</sys_name>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_ui_policy_action_bf4224fadb45df403fa45fa0cf9619d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-30 10:08:04</sys_updated_on>
+        <table>x_dchhl_dch_eclaim_hotel_and_other_expenses_claim</table>
+        <ui_policy display_value="Hidden Claim fields">f2c1ecbadb45df403fa45fa0cf961957</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

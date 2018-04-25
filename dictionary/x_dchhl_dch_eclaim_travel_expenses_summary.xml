@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Base Expenses Summary" max_length="40" name="x_dchhl_dch_eclaim_travel_expenses_summary" type="collection">
+        <element label="Business Travel" max_length="32" name="business_travel" reference="x_dchhl_dch_eclaim_business_travel" type="reference"/>
+        <element label="Currency" max_length="32" name="currency" reference="fx_currency" type="reference"/>
+        <element label="Local Currency Rate" max_length="20" name="currency_rate" type="decimal"/>
+        <element label="Hotel Expenses" max_length="20" name="hotel_expenses" read_only="true" type="decimal"/>
+        <element label="Meal Expenses" max_length="20" name="meal_expenses" read_only="true" type="decimal"/>
+        <element label="Miscellaneous" max_length="20" name="miscellaneous" read_only="true" type="decimal"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Staff Travel" max_length="32" name="staff_travel" reference="x_dchhl_dch_eclaim_staff_business_travel" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Total" max_length="20" name="total" type="decimal"/>
+        <element label="Transportation" max_length="20" name="transportation" read_only="true" type="decimal"/>
+        <element label="Travel Request" max_length="32" name="travel_request" reference="x_dchhl_dch_eclaim_travel_request" type="reference"/>
+        <index name="index">
+            <element name="travel_request"/>
+        </index>
+        <index name="index2">
+            <element name="business_travel"/>
+        </index>
+        <index name="index3">
+            <element name="currency"/>
+        </index>
+        <index name="index4">
+            <element name="staff_travel"/>
+        </index>
+    </element>
+</database>

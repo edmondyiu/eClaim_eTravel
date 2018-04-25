@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="expense_type" table="x_dchhl_dch_eclaim_base_expenses_claim" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transportation</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_base_expenses_claim</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-19 07:19:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6900defbdbfc5b403fa45fa0cf961921</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-19 07:26:05</sys_updated_on>
+            <value>Transportation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entertainment with Vendor</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_base_expenses_claim</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-19 07:21:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b40523fdbfc5b403fa45fa0cf9619e3</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-19 07:26:13</sys_updated_on>
+            <value>Entertainment with Vendor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entertainment with Customer</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_base_expenses_claim</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-19 07:22:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ba0d23fdbfc5b403fa45fa0cf961945</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-19 07:26:16</sys_updated_on>
+            <value>Entertainment with Customer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Meal with Vendor</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_base_expenses_claim</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-19 07:23:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5501927fdbfc5b403fa45fa0cf9619d1</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-19 07:26:20</sys_updated_on>
+            <value>Meal with Vendor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Meal with Customer</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_base_expenses_claim</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-19 07:24:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b321523fdbfc5b403fa45fa0cf961977</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-19 07:26:23</sys_updated_on>
+            <value>Meal with Customer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Miscellaneous</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_base_expenses_claim</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-19 07:25:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>71611a7fdbfc5b403fa45fa0cf9619a5</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-19 07:26:26</sys_updated_on>
+            <value>Miscellaneous</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>expense_type</element>
+            <name>x_dchhl_dch_eclaim_base_expenses_claim</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-19 07:19:45</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>4b40523fdbfc5b403fa45fa0cf9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>expense_type</sys_name>
+            <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+            <sys_update_name>sys_choice_x_dchhl_dch_eclaim_base_expenses_claim_expense_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-19 07:19:45</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

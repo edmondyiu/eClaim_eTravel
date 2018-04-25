@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Ztmp Base Budget Expenditure" max_length="40" name="x_dchhl_dch_eclaim_base_budget_expenditure" type="collection">
+        <element label="Amount" max_length="20" name="amount" type="decimal"/>
+        <element label="Business Travel" max_length="32" name="business_travel" reference="x_dchhl_dch_eclaim_business_travel" type="reference"/>
+        <element label="Currency" max_length="32" name="currency" reference="fx_currency" type="reference"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Staff Travel" max_length="32" name="staff_travel" reference="x_dchhl_dch_eclaim_staff_business_travel" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Travel Date" max_length="40" name="travel_date" type="glide_date"/>
+        <index name="index">
+            <element name="business_travel"/>
+        </index>
+        <index name="index2">
+            <element name="currency"/>
+        </index>
+        <index name="index3">
+            <element name="staff_travel"/>
+        </index>
+    </element>
+</database>

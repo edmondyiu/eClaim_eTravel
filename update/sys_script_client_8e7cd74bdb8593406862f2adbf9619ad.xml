@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>purpose</field>
+        <global>true</global>
+        <messages/>
+        <name>AutoSave</name>
+        <order/>
+        <script><![CDATA[function onChange() {
+
+  var ps = g_form.getValue('staff');
+	
+  //alert('chkpt1: '+ps);
+
+  //if (isEmpty(ps)) {	
+  //var fo = g_form.getDisplayBox('u_first_operand').value;
+
+  var op = g_form.getValue('purpose');
+
+  /*var so = g_form.getValue('u_second_operand');
+
+  var co = g_form.getValue('u_condition');*/
+
+  var request = new GlideAjax('eClaimTravelAjax');
+
+  request.addParam('sysparm_name', 'setQuery');
+
+  request.addParam('sysparm_ps', ps);
+
+  //request.addParam('sysparm_fo', fo);
+
+  request.addParam('sysparm_op', op);
+
+  /*request.addParam('sysparm_so', so);
+
+  request.addParam('sysparm_co', co);*/
+
+  request.getXML(parseResponse);
+
+	  function parseResponse(response){
+
+	  var query = response.responseXML.documentElement.getAttribute("answer");
+
+	  //alert(query);
+
+	  var link='https://dchhkdev.service-now.com/nav_to.do?uri=x_dchhl_dch_eclaim_staff_business_travel.do?sys_id='+query;
+	  //action.setRedirectURL('https://dchhkdev.service-now.com/nav_to.do?uri=x_dchhl_dch_eclaim_staff_business_travel.do?sys_id='+ps);
+	  //if (!isNil(ps)) {
+	  //if (!ps) {
+	  if (!isEmpty(ps) && query!="zzz") {
+		  g_form.clearMessages();
+		  top.window.location = link;
+	  }
+
+	  }
+	
+  //}
+
+}
+
+function isEmpty(val){
+    return (val === undefined || val == null || val.length <= 0) ? true : false;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-29 15:12:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e7cd74bdb8593406862f2adbf9619ad</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>AutoSave</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_script_client_8e7cd74bdb8593406862f2adbf9619ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-30 13:50:21</sys_updated_on>
+        <table>x_dchhl_dch_eclaim_staff_business_travel</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

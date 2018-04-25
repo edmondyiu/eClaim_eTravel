@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_dchhl_dch_eclaim.DCH_eClaimTravel_Util</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>DCH_eClaimTravel_Util</name>
+        <script><![CDATA[var DCH_eClaimTravel_Util = Class.create();
+DCH_eClaimTravel_Util.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	GetAllFirstApprover: function(){	
+		var firstApprover = [];
+
+		//20171129 add by yangcl
+		//Approver过滤条件：审批链所属公司(申请人公司）+审批链部门（员工部门）+申请类型(Type)+子类型(sub_type)
+		//Begin
+		var currentUserId = gs.getUserID();
+		gs.info('currentUserId:' + currentUserId);
+		var newAPUtilClass = new DCH_APCN_UtilClass();
+		var currentUserDetail = newAPUtilClass.returnEmployeeInfo(currentUserId);
+		var currentUserCom=currentUserDetail.u_dch_ap_company;
+		var currentUserDept=currentUserDetail.u_dch_ap_department;	
+
+		var appType=current.u_dch_ap_type;
+		var app_sub_type=current.u_dch_ap_sub_type;
+		var totalAmt = current.u_dch_ap_total_request_amount;
+		var threshold;
+
+		var vendorInOut=current.u_dch_ap_in_out;
+		var criteriaId ='';
+		if(vendorInOut=='')
+			{
+				var thresholdTable = new GlideRecord('x_dchhl_dch_ap_criteria');
+				thresholdTable.addQuery("u_dch_ap_type",appType);
+				thresholdTable.addQuery("u_dch_ap_sub_type",app_sub_type);
+				//thresholdTable.addQuery("u_dch_ap_criteria_id",threshold);
+				thresholdTable.query();
+
+				while (thresholdTable.next()){
+					if (criteriaId.length == 0){
+						criteriaId += (thresholdTable.sys_id);
+					}else{
+					criteriaId+=(',' + thresholdTable.sys_id);
+					}
+				}
+
+			}
+		else
+			{
+				var thresholdTableInOut = new GlideRecord('x_dchhl_dch_ap_criteria');
+				thresholdTableInOut.addQuery("u_dch_ap_type",appType);
+				thresholdTableInOut.addQuery("u_dch_ap_sub_type",app_sub_type);
+				thresholdTableInOut.addQuery("u_dch_ap_in_out",vendorInOut);
+				thresholdTableInOut.query();
+
+				while (thresholdTableInOut.next()){
+					if (criteriaId.length == 0){
+						criteriaId += (thresholdTableInOut.sys_id);
+					}else{
+					criteriaId+=(',' + thresholdTableInOut.sys_id);
+					}
+				}
+			}
+		//End
+		//var thresholdId=threshold.sys_id;
+		var approverChain = new GlideRecord('x_dchhl_dch_ap_approver_chain');
+		approverChain.addQuery('u_dch_ap_criteria_id','IN',criteriaId);//20171129 add by yangcl	
+		approverChain.addQuery('u_dch_ap_company',currentUserCom);//20171129 add by yangcl	
+		approverChain.addQuery('u_dch_ap_department',currentUserDept);//20171129 add by yangcl	
+		//approverChain.addQuery("u_dch_ap_criteria_id",thresholdId);//20171129 add by yangcl	
+		approverChain.query();	
+
+		while (approverChain.next()){
+			firstApprover.push(approverChain.u_dch_ap_approver_level_1.sys_id);
+
+		}
+		gs.info('Number of Approver: '+firstApprover.length);
+
+
+		var firstApproverUserId = '';
+		var employee = new GlideRecord('x_dchhl_dch_ap_employee');
+		employee.addQuery('u_dch_ap_user_id',firstApprover);	
+		employee.query();
+
+		while (employee.next()){
+			if (firstApproverUserId.length == 0){
+				firstApproverUserId += (employee.sys_id);
+			}else{
+				firstApproverUserId+=(',' + employee.sys_id);
+			}
+
+		}
+		return 'sys_id IN' + firstApproverUserId;		
+	},
+	
+    type: 'DCH_eClaimTravel_Util'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-14 13:32:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a1ad9958dbe55b803fa45fa0cf96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DCH_eClaimTravel_Util</sys_name>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_script_include_a1ad9958dbe55b803fa45fa0cf96199d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-14 13:32:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

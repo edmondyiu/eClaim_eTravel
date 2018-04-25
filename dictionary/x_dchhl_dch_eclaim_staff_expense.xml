@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Ztmp Staff Expense" max_length="40" name="x_dchhl_dch_eclaim_staff_expense" type="collection">
+        <element choice="1" label="Claim Approval" max_length="40" name="claim_approval" read_only="true" type="choice">
+            <choice>
+                <element label="Not Yet Requested" sequence="10" value="notRequested"/>
+                <element label="Requested" sequence="20" value="requested"/>
+                <element label="Pending for 1st Round Approval" sequence="30" value="pending1stApproval"/>
+                <element label="Rejected" sequence="40" value="rejected"/>
+                <element label="Approved" sequence="50" value="approved"/>
+            </choice>
+        </element>
+        <element label="Claim Date" max_length="40" name="claim_date" read_only="true" type="glide_date"/>
+        <element label="Contact Number" max_length="40" name="contact_number" read_only="true" type="string"/>
+        <element label="Division/Department" max_length="40" name="department" read_only="true" type="string"/>
+        <element label="Name" max_length="40" name="name" read_only="true" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Position" max_length="60" name="position" read_only="true" type="string"/>
+        <element label="Staff" max_length="32" name="staff" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="staff"/>
+        </index>
+    </element>
+</database>

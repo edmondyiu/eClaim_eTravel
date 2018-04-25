@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>no_of_days</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-22 07:31:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c6bf2170db0ddb403fa45fa0cf96191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>no_of_days</sys_name>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_ui_policy_action_c6bf2170db0ddb403fa45fa0cf96191e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-22 07:31:28</sys_updated_on>
+        <table>x_dchhl_dch_eclaim_hotel_and_other_expenses_claim</table>
+        <ui_policy display_value="Display Hotel Name">c06fe930db0ddb403fa45fa0cf9619b3</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

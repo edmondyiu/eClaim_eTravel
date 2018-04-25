@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_dchhl_dch_eclaim.eClaimTravelAjax</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>eClaimTravelAjax</name>
+        <script><![CDATA[var eClaimTravelAjax = Class.create();
+eClaimTravelAjax.prototype = 
+	//{
+    //initialize: function() {
+    //},
+Object.extendsObject(global.AbstractAjaxProcessor, {
+
+  setQuery: function(){
+
+  var query = '';
+
+  var ps = this.getParameter('sysparm_ps');
+
+  //var fo = this.getParameter('sysparm_fo');
+
+  var op = this.getParameter('sysparm_op');
+
+  /*var so = this.getParameter('sysparm_so');
+
+  var co = this.getParameter('sysparm_co');*/
+	
+  var gr2 = new GlideRecord('x_dchhl_dch_eclaim_staff_business_travel');
+  gr2.addQuery("staff", ps);
+  gr2.addQuery("purpose", op);	  	  
+  gr2.query();
+	  
+  var ans="zzz";
+  if (!gr2.next()) {
+	  
+	  var gr = new GlideRecord('x_dchhl_dch_eclaim_staff_business_travel');
+
+	  //gr.addQuery('sys_id', ps);
+		gr.initialize(); 
+		gr.staff = ps; 
+	    gr.purpose=op;
+		gr.insert();
+	    ans=gr.sys_id;
+  }
+	  
+  /*gr.query();
+
+  while(gr.next()){
+
+  if(!JSUtil.nil(co)){
+
+  query += fo + " " + op + " " + so + " " + co + "\n";
+
+  }
+
+  else {
+
+  query += fo + " " + op + " " + so + "\n";
+
+  }
+
+  }
+
+  gr.u_query = query;
+
+  gr.update();*/
+
+  //return ps;
+  return ans;	  
+
+  },	
+    type: 'eClaimTravelAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-29 15:03:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6645d307db8593406862f2adbf96197c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>eClaimTravelAjax</sys_name>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_script_include_6645d307db8593406862f2adbf96197c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-05 12:27:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

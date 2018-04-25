@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_dchhl_dch_eclaim_travel_expenses_summary" label="Expenses Summary by Destination" max_length="40" name="x_dchhl_dch_eclaim_expenses_summary_by_destination" type="collection"/>
+</database>

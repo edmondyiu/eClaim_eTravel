@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Cash in Advanced" max_length="40" name="x_dchhl_dch_eclaim_cash_in_advanced" type="collection">
+        <element label="Cash in Advanced" max_length="40" name="cash_advanced" type="boolean"/>
+        <element label="Currency" max_length="32" name="currency" reference="fx_currency" type="reference"/>
+        <element label="Local Currency Rate&#9;" max_length="20" name="currency_rate" type="decimal"/>
+        <element label="Hotel Expenses" max_length="20" name="hotel_expenses" type="decimal"/>
+        <element label="Meal Expenses" max_length="20" name="meal_expenses" type="decimal"/>
+        <element label="Miscellaneous" max_length="40" name="miscellaneous" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Staff Travel" max_length="32" name="staff_travel" reference="x_dchhl_dch_eclaim_staff_business_travel" type="reference"/>
+        <element label="Total" max_length="20" name="total" type="decimal"/>
+        <element label="Transportation" max_length="20" name="transportation" type="decimal"/>
+        <element label="Travel Request" max_length="32" name="travel_request" reference="x_dchhl_dch_eclaim_travel_request" type="reference"/>
+        <index name="index">
+            <element name="travel_request"/>
+        </index>
+        <index name="index2">
+            <element name="currency"/>
+        </index>
+        <index name="index3">
+            <element name="staff_travel"/>
+        </index>
+    </element>
+</database>

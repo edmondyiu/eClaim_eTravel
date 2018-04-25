@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_dchhl_dch_eclaim_base_expenses_claim" label="General Expenses Claim" max_length="40" name="x_dchhl_dch_eclaim_general_expenses_claim" type="collection">
+        <element label="Expense Input" max_length="32" name="expense_input" reference="x_dchhl_dch_eclaim_expenses_input" type="reference"/>
+        <element choice="1" label="Type of Expense" max_length="40" name="expense_type" type="choice">
+            <choice>
+                <element label="Transportation" sequence="10" value="transportation"/>
+                <element label="Entertainment with vendor/customer" sequence="20" value="entertainment"/>
+                <element label="Meal" sequence="30" value="meal"/>
+                <element label="Miscellaneous" sequence="40" value="miscellaneous"/>
+            </choice>
+        </element>
+        <element label="Staff Expense" max_length="32" name="staff_expense" reference="x_dchhl_dch_eclaim_staff_expense" type="reference"/>
+        <index name="index">
+            <element name="staff_expense"/>
+        </index>
+        <index name="index2">
+            <element name="expense_input"/>
+        </index>
+    </element>
+</database>

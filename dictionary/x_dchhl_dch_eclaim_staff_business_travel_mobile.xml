@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_dchhl_dch_eclaim_staff_business_travel" label="Ztmp Staff Business Travel Mobile" max_length="40" name="x_dchhl_dch_eclaim_staff_business_travel_mobile" type="collection">
+        <element label="Clone staff travel" max_length="32" name="clone_staff_travel" reference="x_dchhl_dch_eclaim_staff_business_travel" type="reference"/>
+        <index name="index">
+            <element name="clone_staff_travel"/>
+        </index>
+    </element>
+</database>

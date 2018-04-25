@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-17 15:18:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>23baa11bdb305b403fa45fa0cf961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dchhl_dch_eclaim_meal_and_other_expenses_claim.x_dchhl_dch_eclaim.meal_and_other_expenses_claim_user</sys_name>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_security_acl display_value="x_dchhl_dch_eclaim_meal_and_other_expenses_claim">d7ba611bdb305b403fa45fa0cf9619fe</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_23baa11bdb305b403fa45fa0cf961901</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-17 15:18:42</sys_updated_on>
+        <sys_user_role display_value="x_dchhl_dch_eclaim.meal_and_other_expenses_claim_user" name="x_dchhl_dch_eclaim.meal_and_other_expenses_claim_user">57ba611bdb305b403fa45fa0cf9619bf</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

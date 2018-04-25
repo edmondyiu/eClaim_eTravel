@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="daily_room_rate" label="Daily Room Rate" language="en" table="x_dchhl_dch_eclaim_hotel_and_other_budget_expenditure">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>daily_room_rate</element>
+            <help/>
+            <hint/>
+            <label>Daily Room Rate</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_hotel_and_other_budget_expenditure</name>
+            <plural>Daily Room Rates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-28 03:39:58</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a744bb22db05df403fa45fa0cf96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Daily Room Rate</sys_name>
+            <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+            <sys_update_name>sys_documentation_x_dchhl_dch_eclaim_hotel_and_other_budget_expenditure_daily_room_rate_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-28 03:39:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

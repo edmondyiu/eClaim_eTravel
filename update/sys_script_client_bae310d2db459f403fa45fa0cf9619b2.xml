@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>actual_end_date</field>
+        <global>true</global>
+        <messages/>
+        <name>Hide Exp Summary</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//g_form.hideRelatedList('x_dchhl_dch_eclaim_all_expenses_summary.staff_travel');
+	
+	//var tabs = document.getElementsByClassName('x_dchhl_dch_eclaim_business_travel.staff_travel');
+	//var tabs = document.getElementsByClassName('tabs2_tab');
+	//var tabs = document.getElementsByClassName('x_dchhl_dch_eclaim_staff_business_travel');
+	/*$$('.form_header')[0].style.color = 'green';
+	$$('.form_header')[1].style.color = 'orange';
+	$$('.form_header')[2].style.color = 'blue';*/
+	//var tabs = g_form.getSections();
+	//setTimeout(autoSave,100000); // 5 Minutes (in milliseconds)   	
+	setTimeout(autoSave,30000); // 5 Minutes (in milliseconds)   	
+	
+	var sections = g_form.getSections();
+	jslog("Hide Exp Summary chkpt1:"+sections);
+	jslog("Hide Exp Summary chkpt2:"+sections[0]);
+	jslog("Hide Exp Summary chkpt3:"+sections[1]);
+    sections[0].style.backgroundColor = 'yellow';
+    //sections[1].style.backgroundColor = 'red';	
+
+	/*tabs[0].style.backgroundColor = 'red';
+	tabs[1].style.backgroundColor = 'green';
+	tabs[2].style.backgroundColor = 'orange';
+	tabs[3].style.backgroundColor = 'blue';
+	tabs[4].style.backgroundColor = 'yellow';
+	
+	var backgroundColor = 'red';
+   $$('.navbar').each(function(elmt) {
+      elmt.style.backgroundColor = backgroundColor;
+   });*/	
+
+}
+
+function autoSave(){   
+	gsftSubmit(gel('sysverb_update_and_stay'));
+}   ]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-26 16:42:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bae310d2db459f403fa45fa0cf9619b2</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Hide Exp Summary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+        <sys_update_name>sys_script_client_bae310d2db459f403fa45fa0cf9619b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-29 06:44:11</sys_updated_on>
+        <table>x_dchhl_dch_eclaim_staff_business_travel</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

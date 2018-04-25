@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="travel_city" table="x_dchhl_dch_eclaim_travel_location" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Thailand</dependent_value>
+            <element>travel_city</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bangkok</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_travel_location</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-21 14:34:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84268ae0db45db403fa45fa0cf96192c</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-30 09:59:46</sys_updated_on>
+            <value>Bangkok</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Malaysia</dependent_value>
+            <element>travel_city</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kuala Lumpur</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_travel_location</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-21 14:38:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6f646e0db45db403fa45fa0cf96190f</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-30 09:58:21</sys_updated_on>
+            <value>Kuala Lumpur</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Singapore</dependent_value>
+            <element>travel_city</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Singapore</label>
+            <language>en</language>
+            <name>x_dchhl_dch_eclaim_travel_location</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-21 14:39:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40f70ae0db45db403fa45fa0cf961970</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-30 09:59:38</sys_updated_on>
+            <value>Singapore</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>travel_city</element>
+            <name>x_dchhl_dch_eclaim_travel_location</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-03-21 14:34:28</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>2ef60ae0db45db403fa45fa0cf961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>travel_city</sys_name>
+            <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+            <sys_update_name>sys_choice_x_dchhl_dch_eclaim_travel_location_travel_city</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-03-21 14:34:28</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

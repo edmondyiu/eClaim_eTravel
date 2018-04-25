@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="" sys_domain="global" table="x_dchhl_dch_eclaim_travel_expenses_budget_claim" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>business_travel.staff_travel.staff</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>a8730961db2ddb803fa45fa0cf9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>business_travel.country</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>2c730961db2ddb803fa45fa0cf9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>business_travel.city</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>ac730961db2ddb803fa45fa0cf9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>expenditure_item</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>20730961db2ddb803fa45fa0cf9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>hotel_name</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>a0730961db2ddb803fa45fa0cf9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>no_of_days</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>24730961db2ddb803fa45fa0cf9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>currency</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>a4730961db2ddb803fa45fa0cf9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>amount</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>28730961db2ddb803fa45fa0cf9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>daily_room_rate</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>a8730961db2ddb803fa45fa0cf9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>actual_amount</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>2c730961db2ddb803fa45fa0cf9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>att</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>ac730961db2ddb803fa45fa0cf9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>remark</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>20730961db2ddb803fa45fa0cf9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>staff_travel</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>a0730961db2ddb803fa45fa0cf9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>travel_request</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>24730961db2ddb803fa45fa0cf9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>business_travel</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>a4730961db2ddb803fa45fa0cf9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>budget_info</element>
+            <list_id display_value="x_dchhl_dch_eclaim_travel_expenses_budget_claim" element="NULL" name="x_dchhl_dch_eclaim_travel_expenses_budget_claim" parent="x_dchhl_dch_eclaim_travel_request_mobile" relationship="NULL" sys_domain="global" view="Default view">24730961db2ddb803fa45fa0cf9619d1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_id>28730961db2ddb803fa45fa0cf9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_dchhl_dch_eclaim_travel_expenses_budget_claim</name>
+            <parent>x_dchhl_dch_eclaim_travel_request_mobile</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-18 08:44:45</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>24730961db2ddb803fa45fa0cf9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_dchhl_dch_eclaim_travel_expenses_budget_claim</sys_name>
+            <sys_package display_value="DCH eClaim_eTravel" source="x_dchhl_dch_eclaim">55d20ffedb341b403fa45fa0cf961920</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DCH eClaim_eTravel">55d20ffedb341b403fa45fa0cf961920</sys_scope>
+            <sys_update_name>sys_ui_list_x_dchhl_dch_eclaim_travel_expenses_budget_claim_x_dchhl_dch_eclaim_travel_request_mobile_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-18 08:44:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

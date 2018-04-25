@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Travel Request" max_length="40" name="x_dchhl_dch_eclaim_travel_request" sizeclass="3" type="collection">
+        <element label="Actual End Date" max_length="40" name="actual_end_date" type="glide_date"/>
+        <element label="Actual Start Date" max_length="40" name="actual_start_date" type="glide_date"/>
+        <element label="Budget Total" max_length="40" name="budget_total" type="string"/>
+        <element choice="1" label="Claim Approval" max_length="40" name="claim_approval" type="choice">
+            <choice>
+                <element label="Approved" value="approved"/>
+                <element label="Not Yet Requested" value="notRequested"/>
+                <element label="Pending for 1st Round Approval" value="pending1stApproval"/>
+                <element label="Rejected" value="rejected"/>
+                <element label="Requested" value="requested"/>
+            </choice>
+        </element>
+        <element label="Claim Date" max_length="40" name="claim_date" type="glide_date"/>
+        <element label="Contact Number" max_length="40" name="contact_number" type="string"/>
+        <element label="Division/Department" max_length="40" name="department" type="string"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Position" max_length="40" name="position" type="string"/>
+        <element label="Purpose" max_length="40" name="purpose" type="string"/>
+        <element label="Remarks" max_length="40" name="remarks" type="string"/>
+        <element label="Staff" max_length="32" name="staff" reference="sys_user" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Travel Approval" max_length="40" name="travel_approval" type="choice">
+            <choice>
+                <element label="Approved" value="approved"/>
+                <element label="Not Yet Requested" value="notRequested"/>
+                <element label="Pending for 1st Round Approval" value="pending1stApproval"/>
+                <element label="Rejected" value="rejected"/>
+                <element label="Requested" value="requested"/>
+            </choice>
+        </element>
+        <element label="Travel Request Mobile" max_length="32" name="travel_request_mobile" reference="x_dchhl_dch_eclaim_travel_request_mobile" type="reference"/>
+        <element default="javascript:gs.getUser().getDisplayName();" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+    </element>
+</database>
